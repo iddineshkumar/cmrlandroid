@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">CMRL</string>
+
+    <string name="font_name_fontawesome">fontawesome</string>
+    <string name="font_name_source_sans_pro">SourceSansPro</string>
+
+    <string name="msg.alert_cleared">Alert Cleared</string>
+    <string name="msg.no_alert_showing">No Alert Showing</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+    <string name="title_5">Ugly card</string>
+    <string name="title_6">Ugly card</string>
+    <string name="title_7">Ugly card</string>
+    <string name="title_8">Ugly card</string>
+    <string name="title_9">Ugly card</string>
+    <string name="title_10">Ugly card</string>
+    <string name="text_images">%1$d Images</string>
+    <string name="text_button_done">Done</string>
+    <string name="text_title_activity_album">Select photos</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+
+    <string name="home">首页</string>
+    <string name="discover">发现(Fragment+ViewPager嵌套)</string>
+    <string name="shop">商店(Fragment嵌套)</string>
+    <string name="login">登录</string>
+    <string name="system">系统</string>
+    <string name="swipe">侧滑返回Sample</string>
+    <string name="go_swipe_back">SwipeBackActivity+Fragment</string>
+    <string name="go_swipe_back_f">SwipeBackFragment</string>
+
+    <string name="recommend">推荐</string>
+    <string name="hot">热门</string>
+    <string name="favorite">收藏</string>
+
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="pleasecheckyourinternet">Please check your internet connectivity and try again</string>
+
+</resources>

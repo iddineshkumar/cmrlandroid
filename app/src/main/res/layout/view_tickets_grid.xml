@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardMaxElevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/whole_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/no_image" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/created_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left|center"
+                        android:text=""
+                        android:textColor="#747474"
+                        android:textSize="12dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/sourcesanspro_regular" />
+
+                    <TextView
+                        android:id="@+id/created_by_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#747474"
+                        android:textSize="12dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/sourcesanspro_regular" />
+
+                    <TextView
+                        android:id="@+id/last_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Last Visit: mar 2017"
+                        android:textColor="#747474"
+                        android:textSize="12dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/sourcesanspro_regular" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="right|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/day_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="08"
+                    android:textColor="#747474"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sourcesanspro_regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#D9D9D8"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/patient_history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:id="@+id/title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left|center"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#747474"
+                        android:textSize="14dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/sourcesanspro_regular" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="From 3 yrs has back pian, was overwt then , reduced wt, after that better,"
+                    android:textColor="#747474"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/sourcesanspro_regular" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:id="@+id/edit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/edit_image"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:srcCompat="@mipmap/edit_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/view_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@mipmap/eye_color" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <com.cmrl.typeface.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_gravity="left|center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/title_name"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/sourcesanspro_regular"
+                />
+        </LinearLayout>
+
+
+        <com.cmrl.typeface.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="From 3 yrs has back pian, was overwt then , reduced wt, after that better,"
+            android:textColor="#747474"
+            android:textSize="12dp"
+            android:maxLines="2"
+            android:layout_marginRight="10dp"
+            android:id="@+id/description"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:fontFamily="@font/sourcesanspro_regular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right|center"
+        android:layout_height="20dp">
+
+    </LinearLayout>-->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

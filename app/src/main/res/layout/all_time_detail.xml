@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            tools:ignore="UnusedAttribute">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1.0"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    tools:ignore="UselessParent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left|center"
+                        android:id="@+id/back_layout"
+                        android:layout_height="match_parent"
+                        tools:ignore="RtlHardcoded">
+                        <ImageView
+                            android:layout_width="20dp"
+                            app:srcCompat="@drawable/sidemenuicon"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="invisible"
+                            android:layout_height="20dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Equipment name"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="right|center"
+                        android:id="@+id/sign_out"
+
+                        android:layout_height="match_parent"
+                        tools:ignore="RtlHardcoded">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/sign_out"
+                            android:visibility="gone"
+                            android:layout_height="20dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextColor="#80000000"
+                app:tabMode="scrollable"
+                android:scrollbars="none"
+                android:background="#FFFFFF"
+                app:tabSelectedTextColor="@color/black"
+                android:elevation="3dp"
+                app:tabGravity="fill"
+                tools:ignore="UnusedAttribute" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

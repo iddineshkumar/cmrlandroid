@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_fragment"
+            android:icon="@mipmap/home_icon"
+            android:title="HOME" />
+        <item
+            android:id="@+id/favorites_fragment"
+            android:icon="@drawable/like"
+            android:title="FAVORITES" />
+        <item
+            android:id="@+id/change_password"
+            android:icon="@mipmap/padlock"
+            android:title="CHANGE PASSWORD" />
+    </group>
+</menu>

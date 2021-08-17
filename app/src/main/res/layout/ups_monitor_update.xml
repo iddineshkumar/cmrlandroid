@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/coordinatorLayout"
+                  android:layout_width="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAccent"
+                app:layout_scrollFlags="scroll|enterAlways">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1.0"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="left|center"
+                            android:id="@+id/back_layout"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                app:srcCompat="@drawable/sidemenuicon"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="invisible"
+                                android:layout_height="20dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Update"
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                android:visibility="visible"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sourcesanspro_regular"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="right|center"
+                            android:id="@+id/sign_out"
+
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_marginRight="10dp"
+                                app:srcCompat="@drawable/sign_out"
+                                android:visibility="gone"
+                                android:layout_height="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.cm.cmrl.materialeditext.MaterialEditText
+                android:id="@+id/dc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:focusable="false"
+                android:hint="Reading DC voltage"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="12dp"
+                app:met_baseColor="#80000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/colorPrimary" />
+            <com.cm.cmrl.materialeditext.MaterialEditText
+                android:id="@+id/ryb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:focusable="false"
+                android:hint="RYB"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="12dp"
+                app:met_baseColor="#80000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/colorPrimary" />
+            <com.cm.cmrl.materialeditext.MaterialEditText
+                android:id="@+id/kva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:focusable="false"
+                android:hint="KVA"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="12dp"
+                app:met_baseColor="#80000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/colorPrimary" />
+            <com.cm.cmrl.materialeditext.MaterialEditText
+                android:id="@+id/amps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:focusable="false"
+                android:hint="AMPS"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="12dp"
+                app:met_baseColor="#80000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/colorPrimary" />
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="right|center"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/yes_background"
+                    android:elevation="1dp"
+                    android:stateListAnimator="@animator/button_elevation"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/clear_button"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/no_background"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:stateListAnimator="@animator/button_elevation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" >
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sourcesanspro_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/sync"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:stateListAnimator="@animator/button_elevation"
+                android:text="Sync"
+                android:background="@color/colorAccent"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

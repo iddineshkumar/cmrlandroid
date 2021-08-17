@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+      <com.google.android.material.appbar.AppBarLayout
+          android:id="@+id/appBarLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <androidx.appcompat.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="@color/colorAccent"
+             android:contentInsetEnd="0dp"
+             android:contentInsetLeft="0dp"
+             android:contentInsetRight="0dp"
+             android:contentInsetStart="0dp"
+             app:contentInsetEnd="0dp"
+             app:contentInsetLeft="0dp"
+             app:contentInsetRight="0dp"
+             app:contentInsetStart="0dp"
+             app:layout_scrollFlags="scroll|enterAlways">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:weightSum="1.0">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:id="@+id/back_layout"
+                      android:gravity="left|center"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.2">
+                     <ImageView
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"
+                         android:layout_marginLeft="10dp"
+                         app:srcCompat="@drawable/backbutton"
+                         android:visibility="invisible" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.6"
+                      android:gravity="center">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="CONFIRMATION"
+                         android:textColor="@color/white"
+                         android:textSize="14dp"
+                         android:textStyle="bold"
+                         android:visibility="visible"
+                         android:fontFamily="@font/sourcesanspro_regular" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.2"
+                      android:gravity="right|center">
+
+                     <ImageView
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"
+                         android:layout_marginRight="10dp"
+                         app:srcCompat="@drawable/sign_out"
+                         android:visibility="gone" />
+                  </LinearLayout>
+
+               </LinearLayout>
+            </RelativeLayout>
+
+         </androidx.appcompat.widget.Toolbar>
+
+      </com.google.android.material.appbar.AppBarLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:weightSum="1.0"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="0.7"
+          android:layout_height="0dp">
+         <androidx.viewpager.widget.ViewPager
+             android:layout_width="match_parent"
+             android:id="@+id/viewpager"
+             android:layout_height="match_parent"/>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="0.3"
+          android:orientation="vertical"
+          android:layout_height="0dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:weightSum="1.0"
+             android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:id="@+id/left_layout"
+                android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:id="@+id/left_image"
+                   app:srcCompat="@mipmap/left_arrow"
+                   android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/right_layout"
+                android:gravity="right|center"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="30dp"
+                   app:srcCompat="@mipmap/right_arrow"
+                   android:layout_height="30dp"/>
+            </LinearLayout>
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/bottom_layout"
+            android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="0.5"
+               android:gravity="right|center"
+               android:layout_marginRight="10dp"
+               android:layout_height="match_parent">
+              <LinearLayout
+                  android:id="@+id/clear_button"
+                  android:layout_width="120dp"
+                  android:layout_height="40dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/no_background"
+                  android:elevation="1dp"
+                  android:gravity="center"
+                  android:stateListAnimator="@animator/button_elevation"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14dp" >
+                 <TextView
+                     style="@style/TextAppearance.AppCompat.Body1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Cancel"
+                     android:layout_gravity="center"
+                     android:textColor="#000000"
+                     android:textSize="14dp"
+                     android:textStyle="bold"
+                     android:fontFamily="@font/sourcesanspro_regular" />
+              </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="0.5"
+               android:layout_marginLeft="10dp"
+               android:gravity="left|center"
+               android:layout_height="match_parent">
+              <Button
+                  android:id="@+id/add_button"
+                  android:layout_width="120dp"
+                  android:layout_height="40dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/yes_background"
+                  android:elevation="1dp"
+                  android:stateListAnimator="@animator/button_elevation"
+                  android:text="Submit"
+                  android:textAlignment="center"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14dp" />
+           </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>

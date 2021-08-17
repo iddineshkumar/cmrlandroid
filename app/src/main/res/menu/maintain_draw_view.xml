@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/qr_fragment"
+            android:title="QR CODE" />
+        <item
+            android:id="@+id/all_fragment"
+            android:title="ALL" />
+        <item
+            android:id="@+id/monitor_fragment"
+            android:title="MONITOR" />
+        <item
+            android:id="@+id/maintenance_fragment"
+            android:title="MAINTENANCE" />
+        <item
+            android:id="@+id/checker"
+            android:title="CHECKER" />
+    </group>
+</menu>
